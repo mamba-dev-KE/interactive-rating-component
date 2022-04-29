@@ -1,0 +1,46 @@
+@use "../../scss/partials/" as *;
+
+.rating-card {
+  background-color: hsl($dark-blue);
+  width: min(100% - 4rem, 355px);
+
+  padding: 1.8em 2em;
+  border-radius: 1rem;
+
+  & > * + * {
+    margin-top: 0.8em;
+  }
+}
+
+.rating-card__icon {
+  background-color: hsl(209, 19%, 22%);
+  padding: 0.8em;
+  border-radius: 50%;
+}
+
+.rating-card__title {
+  font-weight: 700;
+}
+
+.rating-card__text {
+  color: hsl($light-gray);
+  width: 100%;
+}
+
+.rating-card__btn {
+  background-color: hsl($primary-color);
+  width: 100%;
+  height: 4rem;
+  color: hsl($white);
+
+  border: 0;
+  padding-block: 0.8em;
+  border-radius: 2.5rem;
+
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: hsl($white);
+    color: hsl($primary-color);
+  }
+}

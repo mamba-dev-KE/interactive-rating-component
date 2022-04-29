@@ -1,0 +1,43 @@
+@use "./partials" as *;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  font-size: 10px;
+  font-family: $overpass;
+}
+
+body {
+  font-size: $base-font;
+  background-color: hsl($very-dark-blue);
+  color: hsl($white);
+}
+
+main {
+  min-height: 100vh;
+}
+
+// utility classes
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-items: center;
+}
+
+.center {
+  margin-inline: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
