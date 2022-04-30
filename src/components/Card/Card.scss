@@ -48,39 +48,3 @@
     color: hsl($primary-color);
   }
 }
-
-.rating-card__thanks {
-  padding-top: 1em;
-}
-
-.rating-card__rating {
-  margin-top: 1.6em;
-  margin-bottom: 2em;
-  padding: 0.5em 0.75em;
-  width: 60%;
-
-  color: hsl($primary-color);
-  background-color: hsl($very-dark-blue);
-  border-radius: 2em;
-}
-
-.rating-card__title--thanks,
-.rating-card__rating {
-  text-align: center;
-}
-
-.rating-card__text[data-thanks="true"] {
-  text-align: center;
-  width: 100%;
-  margin-top: 1em;
-}
-
-.rating-card__restart {
-  place-items: center;
-  margin-top: 1em;
-
-  svg {
-    font-size: 3.5rem;
-    fill: hsl($primary-color);
-  }
-}

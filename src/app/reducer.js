@@ -7,6 +7,10 @@ export const toggleSubmit = () => {
   return { type: "TOGGLE_SUBMITTED" };
 };
 
+export const reset = () => {
+  return { type: "RESET" };
+};
+
 // reducer
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -14,6 +18,8 @@ export const reducer = (state, action) => {
       return { ...state, rating: action.payload };
     case "TOGGLE_SUBMITTED":
       return { ...state, isSubmitted: !state.isSubmitted };
+    case "RESET":
+      return { isSubmitted: false, rating: null };
     default:
       return state;
   }
