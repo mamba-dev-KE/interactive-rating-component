@@ -28,20 +28,20 @@ const Card = ({ dispatch, rating, isSubmitted }) => {
     >
       {!isSubmitted ? (
         <>
-          <img className="rating-card__icon" src={star} alt="star" />
-          <h1 className="rating-card__title">How did we do?</h1>
-          <p className="rating-card__text">
+          <motion.img className="rating-card__icon" src={star} alt="star" />
+          <motion.h1 className="rating-card__title">How did we do?</motion.h1>
+          <motion.p className="rating-card__text">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
-          </p>
+          </motion.p>
           <Ratings dispatch={dispatch} rating={rating} />
-          <button
+          <motion.button
             className="rating-card__btn flex flex-center pointer"
             type="submit"
             onClick={handleSubmit}
           >
             Submit
-          </button>
+          </motion.button>
         </>
       ) : (
         <motion.div className="rating-card__thanks">

@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 function App() {
   const initialState = {
     rating: null,
-    isSubmitted: true,
+    isSubmitted: false,
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
