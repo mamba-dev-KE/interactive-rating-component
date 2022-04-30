@@ -18,32 +18,32 @@ const Thanks = ({ dispatch, rating }) => {
   };
   return (
     <motion.article
-      className="rating-card__thanks"
+      className="rating-card-thanks"
       variants={submittedCardVariants}
       initial="hidden"
       animate="visible"
     >
       <motion.img
         variants={imageVariants}
-        className="center"
+        className="rating-card-thanks__image center"
         src={thanks}
-        alt="star"
+        alt=""
       />
-      <motion.div className="rating-card__info" variants={infoVariants}>
+      <motion.div className="rating-card-thanks__info" variants={infoVariants}>
         <motion.p
-          className="rating-card__rating center"
+          className="rating-card-thanks__rating center"
           variants={infoItemsVariants}
         >
           You selected {rating} out of 5
         </motion.p>
         <motion.h1
-          className="rating-card__title--thanks"
+          className="rating-card-thanks__title"
           variants={infoItemsVariants}
         >
           Thank you!
         </motion.h1>
         <motion.p
-          className="rating-card__text"
+          className="rating-card-thanks__text"
           data-thanks="true"
           variants={infoItemsVariants}
         >
@@ -51,7 +51,7 @@ const Thanks = ({ dispatch, rating }) => {
           more support, don't hesitate to get in touch!
         </motion.p>
         <motion.div
-          className="rating-card__restart grid"
+          className="rating-card-thanks__restart grid"
           variants={restartIconVariants}
           onClick={handleSubmit}
         >

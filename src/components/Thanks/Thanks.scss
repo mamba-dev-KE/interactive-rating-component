@@ -1,19 +1,14 @@
 @use "../../scss/partials/" as *;
 
-.rating-card__thanks {
-  padding-top: 1em;
+.rating-card-thanks {
   background-color: hsl($dark-blue);
   width: min(100% - 2rem, 28em);
 
-  padding: 1.5em 2em;
+  padding: 2.3em 2em;
   border-radius: 2.5rem;
-
-  & > * + * {
-    margin-top: 0.8em;
-  }
 }
 
-.rating-card__rating {
+.rating-card-thanks__rating {
   margin-top: 1.6em;
   margin-bottom: 2em;
   padding: 0.5em 0.75em;
@@ -24,20 +19,21 @@
   border-radius: 2em;
 }
 
-.rating-card__title--thanks,
-.rating-card__rating {
+.rating-card-thanks__title,
+.rating-card-thanks__rating {
   text-align: center;
 }
 
-.rating-card__text[data-thanks="true"] {
+.rating-card-thanks__text {
   text-align: center;
   width: 100%;
   margin-top: 1em;
+  color: hsl($medium-gray);
 }
 
-.rating-card__restart {
+.rating-card-thanks__restart {
   place-items: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
 
   svg {
     font-size: 3.5rem;
