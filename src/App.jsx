@@ -1,9 +1,22 @@
+import { useReducer } from "react";
+import { reducer } from "./app/reducer";
 import Card from "./components/Card/Card";
 
 function App() {
+  const initialState = {
+    rating: null,
+    isSubmitted: true,
+  };
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <main className="App grid grid-center">
-      <Card />
+      <Card
+        dispatch={dispatch}
+        rating={state.rating}
+        isSubmitted={state.isSubmitted}
+      />
     </main>
   );
 }

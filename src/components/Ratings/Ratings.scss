@@ -2,7 +2,7 @@
 
 .ratings {
   gap: 1em;
-  margin-block: 1.5em;
+  margin-top: 2em;
 }
 
 .ratings__item {
@@ -28,7 +28,6 @@
 }
 
 button.active {
-  background-color: red;
-  // background-color: hsl($primary-color);
+  background-color: hsl($primary-color);
   color: hsl($white);
 }
