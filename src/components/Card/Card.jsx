@@ -2,7 +2,7 @@ import "./Card.scss";
 import Ratings from "../Ratings/Ratings";
 import star from "../../images/icon-star.svg";
 
-import { cardVariants } from "./Animation";
+import { cardVariants, cardImageVariants } from "./Animation";
 import { motion } from "framer-motion";
 
 import { toggleSubmit } from "../../app/reducer";
@@ -22,20 +22,28 @@ const Card = ({ dispatch, rating, isSubmitted }) => {
         whileHover="hover"
         variants={cardVariants}
       >
-        <motion.img className="rating-card__icon" src={star} alt="star" />
-        <motion.h1 className="rating-card__title">How did we do?</motion.h1>
-        <motion.p className="rating-card__text">
+        <motion.img
+          className="rating-card__icon"
+          src={star}
+          alt="star"
+          variants={cardImageVariants}
+        />
+        <motion.h1 className="rating-card__title" variants={cardImageVariants}>
+          How did we do?
+        </motion.h1>
+        <motion.p className="rating-card__text" variants={cardImageVariants}>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </motion.p>
         <Ratings dispatch={dispatch} rating={rating} />
-        <button
+        <motion.button
           className="rating-card__btn flex flex-center pointer"
           type="submit"
           onClick={handleSubmit}
+          variants={cardImageVariants}
         >
           Submit
-        </button>
+        </motion.button>
       </motion.article>
     );
   } else {
