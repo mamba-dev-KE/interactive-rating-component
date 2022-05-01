@@ -1,11 +1,17 @@
 export const submittedCardVariants = {
   hidden: {
     opacity: 0.5,
-    y: -1000,
+    y: 100,
+    scale: 0.1,
   },
   visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      easing: "easeIn",
+    },
   },
 };
 
