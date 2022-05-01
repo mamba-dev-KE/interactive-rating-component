@@ -16,18 +16,9 @@
 
   transition: color 150ms ease-in-out;
   transition: background-color 200ms ease-in-out;
-
-  &:hover {
-    background-color: hsl($light-gray);
-    color: hsl($white);
-  }
 }
 
 .ratings__item--active {
-  background-color: red;
-}
-
-button.active {
   background-color: hsl($primary-color);
   color: hsl($white);
 }

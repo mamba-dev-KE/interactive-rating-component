@@ -12,7 +12,7 @@ const Ratings = ({ dispatch, rating }) => {
         <button
           className={
             item === parseInt(rating)
-              ? "ratings__item active grid grid-center pointer"
+              ? "ratings__item ratings__item--active  grid grid-center pointer"
               : "ratings__item grid grid-center pointer"
           }
           type="button"

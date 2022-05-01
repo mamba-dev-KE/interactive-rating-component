@@ -29,13 +29,13 @@ const Card = ({ dispatch, rating, isSubmitted }) => {
           is appreciated to help us improve our offering!
         </motion.p>
         <Ratings dispatch={dispatch} rating={rating} />
-        <motion.button
+        <button
           className="rating-card__btn flex flex-center pointer"
           type="submit"
           onClick={handleSubmit}
         >
           Submit
-        </motion.button>
+        </button>
       </motion.article>
     );
   } else {
