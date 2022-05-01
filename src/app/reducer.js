@@ -11,6 +11,10 @@ export const reset = () => {
   return { type: "RESET" };
 };
 
+export const error = () => {
+  return { type: "SET_ERROR" };
+};
+
 // reducer
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -20,6 +24,8 @@ export const reducer = (state, action) => {
       return { ...state, isSubmitted: !state.isSubmitted };
     case "RESET":
       return { isSubmitted: false, rating: null };
+    case "SET_ERROR":
+      return { ...state, isError: !state.isError };
     default:
       return state;
   }

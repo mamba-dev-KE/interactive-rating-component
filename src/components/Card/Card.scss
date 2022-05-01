@@ -48,3 +48,14 @@
     color: hsl($primary-color);
   }
 }
+
+.rating-card__error {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+
+  margin-top: 1.5em;
+  letter-spacing: 0.2em;
+  color: hsl($light-gray);
+}

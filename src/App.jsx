@@ -6,6 +6,7 @@ function App() {
   const initialState = {
     rating: null,
     isSubmitted: false,
+    isError: false,
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -16,6 +17,7 @@ function App() {
         dispatch={dispatch}
         rating={state.rating}
         isSubmitted={state.isSubmitted}
+        isError={state.isError}
       />
     </main>
   );

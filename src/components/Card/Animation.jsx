@@ -27,3 +27,16 @@ export const cardImageVariants = {
     scale: 1,
   },
 };
+
+export const errorVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+    x: -1000,
+  },
+  visible: {
+    opacity: 1,
+    scale: 0.8,
+    x: 0,
+  },
+};
