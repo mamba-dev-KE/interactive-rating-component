@@ -1,7 +1,7 @@
-import { setRating } from "../../app/reducer";
 import "./Ratings.scss";
-import { motion } from "framer-motion";
 import { ratingsVariants, buttonVariants } from "./Animation";
+import { setRating } from "../../app/reducer";
+import { motion } from "framer-motion";
 
 const Ratings = ({ dispatch, rating }) => {
   const handleClick = (e) => {

@@ -17,13 +17,13 @@
 body {
   font-family: $overpass;
   font-size: $base-font;
-
+ 
   background-color: hsl($very-dark-blue);
   color: hsl($white);
 }
 
 main {
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: hidden;
 }
 

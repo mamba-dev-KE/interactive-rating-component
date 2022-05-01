@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 import { reducer } from "./app/reducer";
-import Card from "./components/Card/Card";
+import { Attribution, Card } from "./components";
 
-function App() {
+const App = () => {
   const initialState = {
     rating: null,
     isSubmitted: false,
@@ -12,15 +12,20 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <main className="App grid grid-center">
-      <Card
-        dispatch={dispatch}
-        rating={state.rating}
-        isSubmitted={state.isSubmitted}
-        isError={state.isError}
-      />
-    </main>
+    <>
+      <main className="App grid grid-center">
+        <Card
+          dispatch={dispatch}
+          rating={state.rating}
+          isSubmitted={state.isSubmitted}
+          isError={state.isError}
+        />
+      </main>
+      <footer>
+        <Attribution />
+      </footer>
+    </>
   );
-}
+};
 
 export default App;

@@ -1,12 +1,9 @@
 import "./Card.scss";
-import Ratings from "../Ratings/Ratings";
-import star from "../../images/icon-star.svg";
-
+import { Ratings, Thanks } from "../../components";
 import { cardVariants, cardImageVariants, errorVariants } from "./Animation";
-import { motion } from "framer-motion";
-
+import star from "../../images/icon-star.svg";
 import { toggleSubmit, error } from "../../app/reducer";
-import Thanks from "../Thanks/Thanks";
+import { motion } from "framer-motion";
 
 const Card = ({ dispatch, rating, isSubmitted, isError }) => {
   const handleSubmit = () => {
