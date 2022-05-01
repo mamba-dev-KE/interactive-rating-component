@@ -1,7 +1,11 @@
 @use "../../scss/partials/" as *;
 
 .rating-card {
-  background-color: hsl($dark-blue);
+  background-image: linear-gradient(
+    152deg,
+    hsl($dark-blue),
+    hsl($very-dark-blue)
+  );
   width: min(100% - 2rem, 28em);
   min-height: 38rem;
 

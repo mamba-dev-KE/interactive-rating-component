@@ -51,7 +51,7 @@ const Thanks = ({ dispatch, rating }) => {
           more support, don't hesitate to get in touch!
         </motion.p>
         <motion.div
-          className="rating-card-thanks__restart grid"
+          className="rating-card-thanks__restart pointer grid"
           variants={restartIconVariants}
           onClick={handleSubmit}
         >

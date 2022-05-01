@@ -1,7 +1,13 @@
 @use "../../scss/partials/" as *;
 
 .rating-card-thanks {
-  background-color: hsl($dark-blue);
+  // background-color: hsl($dark-blue);
+  background-image: linear-gradient(
+    152deg,
+    hsl($dark-blue),
+    hsl($very-dark-blue)
+  );
+  // background: linear-gradient(#e66465, #9198e5);
   width: min(100% - 2rem, 28em);
   min-height: 42.8rem;
 
@@ -16,7 +22,7 @@
   width: 60%;
 
   color: hsl($primary-color);
-  background-color: hsl($very-dark-blue);
+  background-color: hsl($dark-blue);
   border-radius: 2em;
 }
 
