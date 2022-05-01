@@ -10,7 +10,7 @@ export const submittedCardVariants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      easing: "easeIn",
+      easing: "easeInOut",
     },
   },
 };
@@ -27,7 +27,7 @@ export const imageVariants = {
     scale: 1,
     transition: {
       type: "spring",
-      duration: 1.5,
+      duration: 0.5,
       stiffness: 150,
     },
   },
@@ -39,7 +39,6 @@ export const infoVariants = {
   },
   visible: {
     opacity: 1,
-
     transition: {
       delayChildren: 1,
       staggerChildren: 0.5,
