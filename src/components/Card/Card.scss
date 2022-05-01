@@ -43,9 +43,14 @@
   text-transform: uppercase;
   font-weight: 700;
 
-  &:hover {
-    background-color: hsl($white);
-    color: hsl($primary-color);
+  transition: background-color 200ms ease-in-out;
+  transition: color 150ms ease-in-out;
+
+  @media (min-width: 50em) {
+    &:hover {
+      background-color: hsl($white);
+      color: hsl($primary-color);
+    }
   }
 }
 

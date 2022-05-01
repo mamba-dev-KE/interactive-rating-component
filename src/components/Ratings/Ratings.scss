@@ -14,8 +14,8 @@
   aspect-ratio: 1;
   border: 0;
 
-  transition: color 150ms ease-in-out;
   transition: background-color 200ms ease-in-out;
+  transition: color 150ms ease-in-out;
 
   @media (min-width: 50em) {
     &:hover {
